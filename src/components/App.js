@@ -8,7 +8,7 @@ class App extends React.Component {
   componentDidMount() {
     const { dispatch } = this.props
     
-    dispatch(handleInitialData)
+    dispatch(handleInitialData())
   }
 
   render() {

@@ -32,7 +32,7 @@ export function handleDeleteGoal(goal) {
     return (dispath) => {
         dispath(removeGoal(goal.id))
 
-        return API.removeGoal(goal.id)
+        return API.deleteGoal(goal.id)
             .catch(() => {
                 dispath(addGoal(goal))
                 alert('An error occurred. Try again.')

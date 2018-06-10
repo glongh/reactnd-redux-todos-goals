@@ -13,7 +13,7 @@ class Todos extends React.Component {
         e.preventDefault()
 
         this.props.dispatch(handleAddTodo(
-            e.input.value,
+            this.input.value,
             () => this.input.value = ''
         ))
     }
